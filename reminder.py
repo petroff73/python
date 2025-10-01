@@ -21,6 +21,7 @@ def set():
             print(dt)
             t = dt.timestamp()
             print(t)
+            label.config(text=f'Напоминание на {hour:02}:{minute:02}')
         except Exсeption as e:
             mb.showerror('Ошибка!', f'Произошла ошибка {e}')
 
